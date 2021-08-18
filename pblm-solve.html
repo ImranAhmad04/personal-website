@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="C:\Users\Super Computer\OneDrive\emranfiles\prblem-solving\index1.html">
+
+    <style>*{
+        box-sizing: border-box;
+    }
+    .container-fluid{
+        background:  rgb(34, 30, 30);
+        color: rgb(247, 247, 247);
+    
+    }
+    .problem{
+    background-color:rgb(48, 39, 39);
+    color: rgb(255, 119, 109);
+    
+    }</style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="navbar text-center"><div class=" text-center"><h1>solve problem with imran</h1></div></div>
+   <div class="row g-3">
+    <h2>problem sloving with javascript</h2>
+    <div class="problem col-lg-12"><h3>1st problem:</h3>
+    <h5>js leapyear </h5>
+    <pre>function leapYear(year)
+        {
+          if((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) 
+          {
+              console.log(year + 'its a loop year')
+          }
+           else{
+               console.log(year + ' ' +'not a loop year')
+           }
+        }
+        leapYear(2020)
+    </pre>
+    </div>
+    <div class="problem col-lg-6"><h3>2nd problem:</h3>
+        <h5>js factorial (recursive way)</h5>
+        <pre>
+            function factorial(n){
+                if(n==0){
+                    return 1
+                }
+                else{
+                    return n * factorial(n -1)
+                }
+            }
+            console.log(factorial(4))
+        </pre>
+    </div>
+        <div class="problem col-lg-6 pt-4">
+            <h5>js factorial (other way)</h5>
+            <pre>
+                function factorial(num){
+                    var factorial = 1;
+                for (var i = 1; i <= num; i++) {
+                    factorial = factorial * i;
+                    
+                }
+                return factorial
+                }
+                console.log(factorial(4)))
+            </pre>
+           
+    </div>
+    <div class="problem col-lg-6 ">
+        <h3>3rd problem:</h3>
+        <h5>js fibonacci sequence</h5>
+        <pre>
+            function fibonacci(n) {
+                var fibo = [0, 1];
+                for (i = 2; i <= n; i++) {
+                    fibo[i] = fibo[i - 1] + fibo[i - 2];
+                    console.log(fibo[i], fibo[i - 1], fibo[i - 2]);
+                }
+                return fibo
+            }
+            
+            console.log(fibonacci(6));
+        </pre>
+        
+    </div>
+    <div class="problem col-lg-6 ">
+        <h5>js fibonacci sequence (with while loop)</h5>
+        <pre> function fibonacci(num) {
+            fibo = [0, 1]
+            i = 2
+            while (i <= num) {
+                fibo[i] = fibo[i - 1] + fibo[i - 2]
+                i++
+            }
+            return fibo
+        }
+        var result=fibonacci(4)
+        console.log(result)
+    </pre>
+       </div>
+   </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
